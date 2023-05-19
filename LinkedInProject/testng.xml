@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.linkedin.qa.ExtentReportListener.ExtentReporterNG"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/kmani/Downloads/Java/LinkedInProject">
+        <classes>
+            <class name="com.linkedin.qa.excel.ExcelDataProviderTest">
+                <methods>
+                    <include name="test1"/>
+                </methods>
+            </class>
+            <class name="com.linkedin.qa.testcases.ForBusinessTest">
+                <methods>
+                    <include name="learningTest"/>
+                    <include name="insightsLinkTest"/>
+                    <include name="postAJobLinkTest"/>
+                    <include name="findLeadsLinkTest"/>
+                    <include name="groupLinkTest"/>
+                    <include name="serviceMarketPlaceTest"/>
+                </methods>
+            </class>
+            <class name="com.linkedin.qa.testcases.HomePageTest">
+                <methods>
+                    <include name="verifyHomePageTitleTest"/>
+                    <include name="verifyUserNameTest"/>
+                    <include name="toClickMyNetworkTest"/>
+                    <include name="toClickJobsTest"/>
+                    <include name="toClickMessagingTest"/>
+                    <include name="toClickOnNotificationsTest"/>
+                    <include name="toClickProfileTest"/>
+                </methods>
+            </class>
+            <class name="com.linkedin.qa.testcases.LoginPageTest">
+                <methods>
+                    <include name="loginPageTitleTest"/>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+            <class name="com.linkedin.qa.testcases.MyNetworkTest">
+                <methods>
+                    <include name="checkMyNetworkTest"/>
+                    <include name="checkContactsLinkTest"/>
+                    <include name="checkFollowingAndFollowersLinkTest"/>
+                    <include name="checkGroupsLinkTest"/>
+                    <include name="checkEventsLinkTest"/>
+                </methods>
+            </class>
+            <class name="com.linkedin.qa.testcases.ProfilePageTest">
+                <methods>
+                    <include name="toViewProfilePageTest"/>
+                    <include name="toEditProfileTest"/>
+                    <include name="toProfileBackgroundTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
